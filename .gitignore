@@ -1,0 +1,32 @@
+## Ignore build results
+bin/
+obj/
+
+## Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Ignore Rider files
+.idea/
+
+## Ignore VS Code settings
+.vscode/
+
+## Ignore build logs
+*.log
+
+## Ignore temporary files
+*.tmp
+*.bak
+
+## Ignore NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+## Ignore other common .NET artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
