@@ -8,21 +8,24 @@ namespace WebsocketComunication
         // create an instance of a websocket server
         private WebSocketServer WSS;
 
-        public WS(string URL){
+        public WS(string URL)
+        {
             this.WSS = new(URL);
 
             this.WSS.AddWebSocketService<TestExt>("/test-ext");
+            this.WSS.AddWebSocketService<TrainingCommunication>("/training");
         }
 
         // Methods
+        
         // // Public Methods
-        // Enables the WebSocket server
+        // Turns-on the WebSocket server
         public void startSocket()
         {
-            this.WSS.Start ();
+            this.WSS.Start();
         }
 
-        // Disables the WebSocket server
+        // Turns-off the WebSocket server
         public void stopSocket()
         {
             this.WSS.Stop();

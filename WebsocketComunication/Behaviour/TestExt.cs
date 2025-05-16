@@ -8,7 +8,7 @@ namespace WebsocketComunication
         // Catching incomming message
         protected override void OnMessage(MessageEventArgs e)
         {
-            string msg = e.Data == "BALUS"
+            string msg = e.Data == "Random key"
                       ? "Appropriate key"
                       : "Incorrect key, try once more";
 
