@@ -10,7 +10,7 @@ namespace WebsocketComunication
 
             wS.startSocket();
 
-            Console.ReadKey (true);
+            Console.ReadLine();
 
             wS.stopSocket();
         }
